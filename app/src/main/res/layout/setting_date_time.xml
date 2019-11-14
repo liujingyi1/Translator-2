@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@color/settings_background_color">
+
+    <Switch
+        android:id="@+id/sw_24_hour_format"
+        style="@style/DetailsButtonStyle"
+        android:checked="true"
+        android:text="@string/title_24_hour_format" />
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginStart="58dp"/>
+    <Switch
+        android:id="@+id/sw_auto_time_zone"
+        android:checked="true"
+        style="@style/DetailsButtonStyle"
+        android:text="@string/title_auto_time_zone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="18dp"
+        android:paddingStart="58dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/settings_primary_size"
+            android:text="@string/title_time_zone"
+            android:textColor="@color/settings_primary_color" />
+
+        <Spinner
+            android:id="@+id/sp_time_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/timezone_labels" />
+    </LinearLayout>
+
+
+</LinearLayout>

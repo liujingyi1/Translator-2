@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeNoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- 允许使用transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <!--是否覆盖执行，其实可以理解成是否同步执行还是顺序执行-->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+
+    <style name="ComposeThemeLight" parent="@style/AppThemeNoTitle">
+        <item name="Compose_UI_slide_bar_statusbar_color">#00FFFFFF</item>
+        <item name="Compose_UI_slide_bar_background_color">#FFE5E5EA</item>
+        <item name="Compose_UI_slide_bar_textColor">#8F000000</item>
+        <item name="Compose_UI_slide_bar_textColor_second">#8F000000</item>
+        <item name="Compose_UI_slide_bar_endSession_textColor">#FFFC5956</item>
+        <item name="Compose_UI_slide_bar_endOther_textColor">#FF0085F5</item>
+        <item name="Compose_UI_slide_bar_communicate_img">@drawable/compose_communicate</item>
+        <item name="Compose_UI_slide_bar_textSize_background">@drawable/compose_text_size_normal_bg</item>
+        <item name="Compose_UI_slide_bar_textSize_background_select">@drawable/compose_text_size_select_bg</item>
+        <item name="Compose_UI_slide_bar_auto_img">@drawable/compose_auto_off</item>
+    </style>
+
+    <style name="ComposeThemeDack" parent="@style/AppThemeNoTitle">
+        <item name="Compose_UI_slide_bar_statusbar_color">#FF000000</item>
+        <item name="Compose_UI_slide_bar_background_color">#FF444D54</item>
+        <item name="Compose_UI_slide_bar_textColor">#E6FFFFFF</item>
+        <item name="Compose_UI_slide_bar_textColor_second">#88FFFFFF</item>
+        <item name="Compose_UI_slide_bar_endSession_textColor">#E6FFFFFF</item>
+        <item name="Compose_UI_slide_bar_endOther_textColor">#E6FFFFFF</item>
+        <item name="Compose_UI_slide_bar_communicate_img">@drawable/compose_communicate_dark</item>
+        <item name="Compose_UI_slide_bar_textSize_background">@drawable/compose_text_size_normal_bg_dark</item>
+        <item name="Compose_UI_slide_bar_textSize_background_select">@drawable/compose_text_size_select_bg_dark</item>
+        <item name="Compose_UI_slide_bar_auto_img">@drawable/compose_auto_off_dark</item>
+    </style>
+
+    <style name="Theme_RecorderAudioDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="SettingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">@color/setting_status_bar_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:switchStyle">@style/SwitchStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/DropDownItemStyle</item>
+    </style>
+
+    <style name="DropDownItemStyle" parent="@android:style/Widget.Material.DropDownItem.Spinner">
+        <item name="android:textAppearance">@style/DropDownItemTextViewStyle</item>
+    </style>
+
+    <style name="DropDownItemTextViewStyle"
+        parent="@android:style/TextAppearance.Material.Widget.DropDownItem">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="@android:style/Widget.Material.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/SpinnerTextViewStyle</item>
+    </style>
+    
+    <style name="SpinnerTextViewStyle" parent="@android:style/TextAppearance.Material.Menu">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SettingButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">102dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:background">@drawable/setting_button_drawable</item>
+    </style>
+
+    <style name="SwitchStyle" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:showText">false</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+    </style>
+
+    <!--The effect is : text on the left and icon on the right-->
+    <style name="DetailsButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:paddingStart">58dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/settings_primary_color</item>
+        <item name="android:textSize">@dimen/settings_primary_size</item>
+        <item name="android:drawableRight">@drawable/details_icon</item>
+        <item name="android:background">@drawable/item_background_material</item>
+    </style>
+
+    <!--The effect is : category text-->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/settings_category_title_color</item>
+        <item name="android:textSize">@dimen/settings_category_title_size</item>
+    </style>
+
+    <!--The effect is : blue text button-->
+    <style name="GeneralButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:paddingStart">58dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/settings_general_color</item>
+        <item name="android:textSize">@dimen/settings_primary_size</item>
+        <item name="android:background">@drawable/item_background_material</item>
+    </style>
+    <style name="def_seebarwithtext_style">
+        <item name="seek_bg_color">#e6e6e6</item>
+        <item name="seek_pb_color">#8ace00</item>
+        <item name="seek_ball_solid_color">#ffffff</item>
+        <item name="seek_ball_stroke_color">#e6e6e6</item>
+        <item name="seek_text_color">#666666</item>
+        <item name="seek_text_size">12sp</item>
+    </style>
+
+    <style name="RoundButtonStyle">
+        <item name="android:layout_width">@dimen/round_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FF211B02</item>
+        <item name="android:textSize">@dimen/settings_primary_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/round_btn_background</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textColor">@color/settings_primary_color</item>
+        <item name="android:textSize">@dimen/settings_primary_size</item>
+        <item name="android:background">@drawable/item_background_material</item>
+    </style>
+
+    <style name="HorizontalLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/settings_divider_color</item>
+        <item name="android:layout_marginStart">40dp</item>
+    </style>
+
+    <style name="OtaDialogStyle" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/DialogSAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DialogSAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+    <style name="DialogStyle" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+    </style>
+
+    <style name="DialogButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">72px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/dialog_button_text_color</item>
+        <item name="android:textSize">@dimen/settings_primary_size</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="TrimmedHorizontalProgressBar" parent="android:Widget.Material.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_material_trimmed</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:maxHeight">3dip</item>
+    </style>
+
+    <style name="WifiCheckPortalDialogStyle" parent="@android:style/Theme.Material.Light">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

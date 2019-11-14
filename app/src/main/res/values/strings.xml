@@ -1,0 +1,344 @@
+﻿<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- tts text-->
+    <string name="tts_text" translatable="false">This is a demo of Microsoft Cognitive Services Text to Speech API.</string>
+    <string name="tts_text_zh" translatable="false">松开手指,取消发送.</string>
+    <string name="play_button_name" translatable="false">Play</string>
+    <string name="stop_button_name" translatable="false">Stop</string>
+    <string name="tts_text_ar" translatable="false">يتعذر حذف جهات الاتصال من حساباتك المخصصة للقراءة فقط، ولكن يمكن إخفاؤها</string>
+    <string name="tts_text_bg" translatable="false">Този контакт е само за четене. Не може да бъде изтрит, но можете да го скриете</string>
+    <string name="tts_text_ca" translatable="false">"Vols desar els canvis que ja has aplicat i enllaçar els contactes seleccionats?"</string>
+    <string name="tts_text_cs" translatable="false">"Chcete uložit provedené změny, zrušit propojení kontaktu a vytvořit několik samostatných kontaktů?"</string>
+    <string name="tts_text_da" translatable="false">"Vil du gemme de ændringer, du allerede har foretaget, og sammenflette med den valgte kontaktperson?"</string>
+    <string name="tts_text_fr" translatable="false">"Ce contact est en lecture seule. Il ne peut pas être supprimé, mais vous pouvez le masquer."</string>
+    <string name="tts_text_es" translatable="false">Este contacto es de solo lectura. No se puede eliminar, pero sí ocultar.</string>
+    <string name="tts_text_hi" translatable="false">\"क्या आप पहले से किए गए बदलावों को सहेजना और इस संपर्क को एकाधिक संपर्कों में अनलिंक करना चाहते हैं?</string>
+    <string name="tts_text_vi" translatable="false">Bạn có muốn lưu các thay đổi mình đã thực hiện và hủy liên kết liên hệ này thành nhiều liên hệ không</string>
+    <string name="tts_text_hk" translatable="false">這是唯讀聯絡人，因此無法刪除，但可加以隱藏</string>
+    <string name="tts_text_tw" translatable="false">您要儲存目前所做變更，並將這個聯絡人的連結取消，還原為多筆聯絡人資料嗎</string>
+    <string name="tts_text_ru" translatable="false">"Сохранить изменения и разделить этот контакт?"</string>
+
+    <string name="home_label">THome</string>
+    <string name="final_response_error">Sorry,I didn\'t hear you clearly.</string>
+    <string name="app_name">Translator</string>
+    <string name="compose_message">Compse message</string>
+    <string name="recoder_normal">Hold to Talk</string>
+    <string name="recoder_recording">Release to Send</string>
+    <string name="recoder_want_cancel">Release to Cancel</string>
+    <string name="recoder_how_to_cancel">Slide up to cancel</string>
+    <string name="recoder_too_short">Message too short</string>
+    <string name="no_network">NO network!</string>
+    <string name="need_wifi">PLS CONNECT WIFI!</string>
+    <string name="stt_error">Sound to text error!</string>
+    <string name="feedback_hardware">Hardware</string>
+    <string name="feedback_auto_shutdown">Auto shutdown</string>
+    <string name="feedback_network">Network</string>
+    <string name="feedback_sound">Sound</string>
+    <string name="feedback_translation">Translation</string>
+    <string name="feedback_battery">Battery</string>
+    <string name="feedback_others">Others</string>
+
+    <string name="compose_auto_text">Auto report</string>
+    <string name="compose_textsize_text">Font size</string>
+    <string name="compose_end_text">Hang up</string>
+    <string name="compose_end_other_text">Hang up other</string>
+    <string name="compose_waiting">Waiting</string>
+    <string name="text_size_small_text">Small</string>
+    <string name="text_size_normal_text">Normal</string>
+    <string name="text_size_large_text">Large</string>
+    <string name="compose_no_net_title">No network!</string>
+    <string name="compose_no_net_message">Please set the network!</string>
+
+    <string name="home_transition_name" translatable="false">transition_name_1</string>
+    <string name="language_name_zh_cn" translatable="false">"普通话"</string>
+    <string name="language_name_zh_hk" translatable="false">"粤语"</string>
+    <string name="language_name_en_us" translatable="false">"English (US)"</string>
+    <string name="language_name_en_au" translatable="false">"English (AU)"</string>
+    <string name="language_name_en_ca" translatable="false">"English (CA)"</string>
+    <string name="language_name_en_gb" translatable="false">"English (UK)"</string>
+    <string name="language_name_en_in" translatable="false">"English (IN)"</string>
+    <string name="language_name_en_nz" translatable="false">"English (NZ)"</string>
+    <string name="language_name_en_ie" translatable="false">"English (IE)"</string>
+    <string name="language_name_ar_eg" translatable="false">"اللغة العربية(EG)"</string>
+    <string name="language_name_da_dk" translatable="false">"Dansk(DK)"</string>
+    <string name="language_name_de_de" translatable="false">"Deutsch(DE)"</string>
+    <string name="language_name_es_es" translatable="false">"Español(ES)"</string>
+    <string name="language_name_es_mx" translatable="false">"Español(MX)"</string>
+    <string name="language_name_fi_fi" translatable="false">"Suomen"</string>
+    <string name="language_name_fr_ca" translatable="false">"Français(CA)"</string>
+    <string name="language_name_fr_fr" translatable="false">"Français(FR)"</string>
+    <string name="language_name_it_it" translatable="false">"Italiano"</string>
+    <string name="language_name_ja_jp" translatable="false">"日本語"</string>
+    <string name="language_name_ko_kr" translatable="false">"한국어"</string>
+    <string name="language_name_nl_nl" translatable="false">"Nederlands"</string>
+    <string name="language_name_pl_pl" translatable="false">"Polski"</string>
+    <string name="language_name_pt_br" translatable="false">"Português(BR)"</string>
+    <string name="language_name_pt_pt" translatable="false">"Português(PT)"</string>
+    <string name="language_name_ru_ru" translatable="false">"русский"</string>
+    <string name="language_name_sv_se" translatable="false">"Svenska"</string>
+    <string name="language_name_th_th" translatable="false">"ไทย"</string>
+    <string name="language_name_cs_cz" translatable="false">"Čeština"</string>
+    <string name="language_name_ro_ro" translatable="false">"Română"</string>
+    <string name="language_name_hu_hu" translatable="false">"Magyar"</string>
+    <string name="language_name_vi" translatable="false">"Tiếng Việt"</string>
+    <string name="language_name_ar_sa" translatable="false">"لعربية(السعودية)"</string>
+    <string name="language_name_in_id" translatable="false">"BahasaIndonesia"</string>
+    <string name="language_name_ta" translatable="false">"தமிழ்(இந்தியா)"</string>
+    <string name="language_name_hi_in" translatable="false">"हिन्दी(भारत)"</string>
+    <string name="language_name_el_gr" translatable="false">"Ελληνικά"</string>
+    <string name="language_name_ms_my" translatable="false">"Melayu"</string>
+    <string name="language_name_ca_es" translatable="false">"Català(ES)"</string>
+    <string name="language_name_nb_no" translatable="false">"norsk språk"</string>
+    <string name="language_name_sk_sk" translatable="false">"slovenského jazyk"</string>
+    <string name="language_name_bg_bg" translatable="false">"български"</string>
+    <string name="language_name_he_il" translatable="false">"עברית(ישראל)"</string>
+    <string name="language_name_tr_tr" translatable="false">"Türk dili"</string>
+    <string name="language_name_hr_hr" translatable="false">"hrvatski"</string>
+    <string name="language_name_sl_si" translatable="false">"Slovenščina"</string>
+
+    <string name="language_code_zh_cn" translatable="false">zh-CN</string>
+    <string name="language_code_zh_hk" translatable="false">zh-HK</string>
+    <string name="language_code_en_us" translatable="false">en-US</string>
+    <string name="language_code_en_au" translatable="false">en-AU</string>
+    <string name="language_code_en_ca" translatable="false">en-CA</string>
+    <string name="language_code_en_gb" translatable="false">en-GB</string>
+    <string name="language_code_en_in" translatable="false">en-IN</string>
+    <string name="language_code_en_nz" translatable="false">en-NZ</string>
+    <string name="language_code_en_ie" translatable="false">en-IE</string>
+    <string name="language_code_ar_eg" translatable="false">ar-EG</string>
+    <string name="language_code_da_dk" translatable="false">da-DK</string>
+    <string name="language_code_de_de" translatable="false">de-DE</string>
+    <string name="language_code_es_es" translatable="false">es-ES</string>
+    <string name="language_code_es_mx" translatable="false">es-MX</string>
+    <string name="language_code_fi_fi" translatable="false">fi-FI</string>
+    <string name="language_code_fr_ca" translatable="false">fr-CA</string>
+    <string name="language_code_fr_fr" translatable="false">fr-FR</string>
+    <string name="language_code_it_it" translatable="false">it-IT</string>
+    <string name="language_code_ja_jp" translatable="false">ja-JP</string>
+    <string name="language_code_ko_kr" translatable="false">ko-KR</string>
+    <string name="language_code_nl_nl" translatable="false">nl-NL</string>
+    <string name="language_code_pl_pl" translatable="false">pl-PL</string>
+    <string name="language_code_pt_br" translatable="false">pt-BR</string>
+    <string name="language_code_pt_pt" translatable="false">pt-PT</string>
+    <string name="language_code_ru_ru" translatable="false">ru-RU</string>
+    <string name="language_code_sv_se" translatable="false">sv-SE</string>
+    <string name="language_code_th_th" translatable="false">th-TH</string>
+    <string name="language_code_cs_cz" translatable="false">cs-CZ</string>
+    <string name="language_code_ro_ro" translatable="false">ro-RO</string>
+    <string name="language_code_hu_hu" translatable="false">hu-HU</string>
+    <string name="language_code_vi" translatable="false">vi</string>
+    <string name="language_code_ar_sa" translatable="false">ar-SA</string>
+    <string name="language_code_in_id" translatable="false">in-ID</string>
+    <string name="language_code_ta" translatable="false">ta</string>
+    <string name="language_code_hi_in" translatable="false">hi-IN</string>
+    <string name="language_code_el_gr" translatable="false">el-GR</string>
+    <string name="language_code_ms_my" translatable="false">ms-MY</string>
+    <string name="language_code_ca_es" translatable="false">ca-ES</string>
+    <string name="language_code_nb_no" translatable="false">nb-NO</string>
+    <string name="language_code_sk_sk" translatable="false">sk-SK</string>
+    <string name="language_code_bg_bg" translatable="false">bg-BG</string>
+    <string name="language_code_he_il" translatable="false">he-IL</string>
+    <string name="language_code_tr_tr" translatable="false">tr-TR</string>
+    <string name="language_code_hr_hr" translatable="false">hr-HR</string>
+    <string name="language_code_sl_si" translatable="false">sl-SI</string>
+
+    <string name="iflytek" translatable="false">iflytek</string>
+    <string name="microsoft_speech" translatable="false">microsoft_speech</string>
+    <string name="microsoft_bing" translatable="false">microsoft_bing</string>
+    <string name="microsoft_speech_translate" translatable="false">microsoft_speech_translate</string>
+    <string name="microsoft_translate" translatable="false">microsoft_translate</string>
+    <string name="baidu" translatable="false">baidu</string>
+    <string name="roobo" translatable="false">roobo</string>
+    <string name="google" translatable="false">google</string>
+    <string name="microsoft" translatable="false">microsoft</string>
+    <string name="bing" translatable="false">bing</string>
+
+    <string name="missing_required_permission">You have disabled a required permission.</string>
+
+    <!-- Settings strings-->
+    <string name="setting_title">Settings</string>
+    <string name="wifi_setting_button_label">WiFi</string>
+    <string name="pair_setting_button_label">Pair</string>
+    <string name="role_setting_button_label">Role</string>
+    <string name="common_setting_button_label">General</string>
+    <string name="storage_setting_button_label">Storage</string>
+    <string name="ota_setting_button_label">Ota</string>
+    <string name="about_setting_button_label">About</string>
+    <string name="device_info_title">Device info</string>
+    <string name="device_name">Device name:</string>
+    <string name="device_name_value">Seagull Tablet Translator</string>
+    <string name="device_model">Device model:</string>
+    <string name="serial_number">Serial number:</string>
+    <string name="mac_address">Mac address:</string>
+    <string name="device_version">Device version:</string>
+    <string name="feedback_title">Improvement advice</string>
+    <string name="user_protocol_title">User protocol</string>
+    <string name="feedback_question_type">Question type:</string>
+    <string name="feedback_question_description">Question description</string>
+    <string name="feedback_contacts">Contact number:</string>
+    <string name="feedback_submit">Submit</string>
+    <string name="reset_factory_label">Reset factory</string>
+    <string name="reset_factory_confirm_msg">Erase all your personal information? You can not
+        undo this action!</string>
+    <string name="storage_save">Save</string>
+    <string name="storage_clean_title">Clean memory</string>
+    <string name="storage_clean">Clean data</string>
+    <string name="storage_state">Storage state</string>
+    <string name="save_type">Chat record</string>
+    <string name="save_type_none">Not save</string>
+    <string name="save_type_text">Text only</string>
+    <string name="save_type_sound">Sound only</string>
+    <string name="save_type_text_sound">Text and Sound</string>
+    <string name="toast_clean_data_success">Clean data success.</string>
+    <string name="toast_clean_data_failed">Clean data failed.</string>
+    <string name="title_display_and_brightness">Display and brightness</string>
+    <string name="title_battery_percentage">Battery percentage</string>
+    <string name="title_languages">System languages</string>
+    <string name="font_size_note">You can freely set the size of the reading font according to your needs</string>
+    <string name="title_font_size">Font size</string>
+    <string name="title_time_zone">Time zone</string>
+    <string name="title_date_time">Date &amp; time</string>
+    <string name="title_24_hour_format">Use 24-hour format</string>
+    <string name="title_auto_time_zone">Automatic time</string>
+    <string name="ota_download_error">An error occurred while downloading the application</string>
+    <string name="ota_text">Your app is up to date.</string>
+    <string name="ota_update">Check for update</string>
+    <string name="ota_sd_error">Sd card is not found.</string>
+    <string name="ota_negative_button">Update later</string>
+    <string name="ota_positive_button">Update immediately</string>
+    <string name="ota_update_failed">Application update failed</string>
+    <string name="ota_check_failed">Application version detection failed</string>
+    <string name="ota_new_version">New version: </string>
+    <string name="ota_current_version">Current version: </string>
+    <string name="ota_network_error">Unable to connect to network.</string>
+    <string name="master_clear_progress_title">Erasing</string>
+    <string name="master_clear_progress_text">Please wait...</string>
+    <string name="title_screen_timeout">Auto sleep</string>
+    <string name="title_screen_timeout_battery">Battery</string>
+    <string name="title_screen_timeout_charging">Charging</string>
+    <string name="screen_time_2_mins">2 min</string>
+    <string name="screen_time_5_mins">5 min</string>
+    <string name="screen_time_10_mins">10 min</string>
+    <string name="screen_time_30_mins">30 min</string>
+    <string name="screen_time_large_mins">Never</string>
+
+
+    <!-- Wifi strings -->
+    <string name="status_off">OFF</string>
+    <string name="status_on">ON</string>
+    <string name="wifi_switch">WiFi</string>
+    <string name="wifi_remembered">"Saved"</string>
+    <string name="wifi_disabled">"Blocked"</string>
+    <string name="wifi_not_in_range">"Unavailable"</string>
+    <string name="wifi_secured_first_item">"Protected via <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g>"</string>
+    <string name="wifi_secured_second_item">",Protected via <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g>"</string>
+    <string name="wifi_wps_available_first_item">"WPS available"</string>
+    <string name="wifi_wps_available_second_item">" (WPS available)"</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA</string>
+    <string name="wifi_security_wpa2">WPA2</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_fail_to_scan">"Unable to scan the network by scanning"</string>
+    <string name="wifi_starting">"Turning Wi\u2011Fi on\u2026"</string>
+    <string name="wifi_stopping">"Turning off Wi\u2011Fi\u2026"</string>
+    <string name="wifi_closed">"To see available networks, turn Wi\u2011Fi on."</string>
+    <string name="wifi_security">"Security"</string>
+    <string name="wifi_signal">"Signal strength"</string>
+    <string name="wifi_status">"Status"</string>
+    <string name="wifi_speed">"Link speed"</string>
+    <string name="wifi_ip_address">"IP address"</string>
+    <string name="wifi_netmark">"Subnet mask"</string>
+    <string name="wifi_gateway">"Gateway"</string>
+    <string name="wifi_password">"password"</string>
+    <string name="wifi_show_password">"Show password"</string>
+    <string name="wifi_connect">"Connect"</string>
+    <string name="wifi_forget">"Forget"</string>
+    <string name="wifi_cancel">"Cancel"</string>
+    <string name="wifi_info_forget">"Ignore this network"</string>
+    <string name="wifi_info_sign">"Sign in"</string>
+    <string name="wifi_unchanged" msgid="3410422020930397102">"（unchanged）"</string>
+    <string name="wifi_select_hint">"Select network…"</string>
+    <string name="wifi_name">"Network name：  "</string>
+    <string name="wifi_connected">"Connected"</string>
+    <string name="wifi_login_toast">"Web authentication"</string>
+    <string name="wifi_login_message">"Login to wlan network?"</string>
+    <string name="wifi_login_ok">"OK"</string>
+    <string name="wifi_login_cancel">"Cancel"</string>
+    <string name="wifi_disable_label">Please enable the network first</string>
+    <string name="wifi_connected_no_internet">Connected, no Internet</string>
+
+    <string name="role_fragemnt_title">Role</string>
+    <string name="role_custom_title">Customer</string>
+    <string name="role_custom_summary">Automatically back to the language selection interface after each end of the conversation, waiting for the next customer to use</string>
+    <string name="role_admin_title">Administrator</string>
+    <string name="role_admin_summary">After booting up, when connected to the network and paired, the session interface of the default language is automatically entered.</string>
+    <string name="start_up_page">Start the first screen</string>
+    <string name="no_network_text">Please check the network</string>
+    <string name="code_edit_hint">Pairing Code</string>
+    <string name="key_done">OK</string>
+    <string name="pair_code_title">This device pairing code</string>
+    <string name="pair_code_invalid_title">Pairing code has expired</string>
+    <string name="pair_text">Pair</string>
+    <string name="unpair_text">Unpair</string>
+    <string name="requesting_pair_code">Requesting pairing code</string>
+    <string name="reques_pair_code_again">RETRY</string>
+    <string name="current_device">Current device</string>
+    <string name="paired_device">Paired device</string>
+    <string name="ota_version_title">System version</string>
+    <string name="ota_version_name">Current version</string>
+    <string name="ota_latest_version">Your software is the latest version</string>
+    <string name="ota_update_title">Translator Update</string>
+    <string name="ota_download_title">Downloading the latest version</string>
+    <string name="ota_system_version">System version</string>
+    <string name="ota_current_version_title">Current version</string>
+    <string name="ota_check_version">Check update</string>
+    <string name="ota_manual">Manual</string>
+    <string name="ota_auto">Auto</string>
+    <string name="ota_update_button">Update immediately</string>
+    <string name="checkota_button">Check for update</string>
+    <string name="feedback_type">Please select the question type first</string>
+    <string name="feedback_description_phone">Description information and number cannot be empty</string>
+    <string name="feedback_phone_error">Please enter the correct phone number</string>
+    <string name="feedback_no_network">Please connect to the network first</string>
+    <string name="feedback_pro_message">Submitting</string>
+    <string name="feedback_succeed">Feedback success</string>
+    <string name="feedback_failed">Feedback failure</string>
+    <string name="feedback_timeout">Feedback timeout</string>
+    <string name="feedback_phone_hint">Please enter your phone number</string>
+    <string name="feedback_question_description_title">Question description:</string>
+    <string name="ota_message_title">Version message</string>
+    <string name="ota_discover_new_version">Discover new version</string>
+    <string name="ota_goto">Redirect to</string>
+
+    <string name="only_one_worker_accept">Only one staff member allowed</string>
+    <string name="ota_install_title">Installing app</string>
+    <string name="show_dev_countdown">Now just execute again <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> operations can enter the password interface。</string>
+
+    <string name="notice_text">Dear visitors,\n\nWelcome to the airport translator\n\nWelcome to the Mercedes-Benz Cultural Center\n\n</string>
+
+    <string name="roobo_init_failed">Init roobo failed</string>
+
+    <string name="change_default_toast">Only customer could set default page.</string>
+    <string name="translat_error_toast">Translate error.</string>
+    <string name="unknown_error_toast">Unknown error.</string>
+    <string name="reques_pair_code_fail">Request pair code fail.</string>
+    <string name="reques_pair_code_fail_toast">Request pair code failed, please request again.</string>
+    <string name="pair_fail_toast_invalid_code">invalid code</string>
+    <string name="pair_fail_toast_fail">pairing failed</string>
+    <string name="pair_fail_toast_already_pair">already paired</string>
+    <string name="pair_fail_toast_not_online">not online</string>
+
+    <string name="click_too_fast">The recording time is too short!</string>
+    <string name="start_page_language">Language list</string>
+    <string name="start_page_notice">Multi-function home screen</string>
+    <string name="start_page_chat">Chat interface</string>
+    <string name="weather_net_error">NetWork Error</string>
+    <string name="weather_request_error">Request Error</string>
+    <string name="weather_location_error">Location Error</string>
+    <string name="weather_update">Updating...</string>
+    <string name="weather_init">Initializing...</string>
+    <string name="loading_text">loading...</string>
+
+    <string name="connect_server_toast">Connecting to the server, please wait a moment.</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<NUANCE>
+<VERSION>NUAN_1.0</VERSION>
+<HEADER>
+  <BROKERSTRING>pipeline/Japanese/ichiro/22/embedded-compact/1.1.1/text/pcm</BROKERSTRING>
+  <PRIORITY>5213</PRIORITY>
+  <PARAMETERS>
+    <language>Japanese</language>
+    <langcode>JPJ</langcode>
+    <langietf>ja-JP</langietf>
+    <langversion>1.1.0</langversion>
+    <voice>Ichiro</voice>
+    <voiceversion>2.2.1.0</voiceversion>
+    <vopversion>1.1.1</vopversion>
+    <gender>Male</gender>
+    <age>Adult</age>
+    <fecfg>cfg3</fecfg>
+    <voiceml>no</voiceml>
+    <mlset>jpj,enu</mlset>
+    <extclccfg>jpj+*=clc/jpj/cfg3,enu+*=clc/enu/cfg3</extclccfg>
+    <extraesclang>enu</extraesclang>
+    <datapackagename>jpj/ichiro/embedded-compact/1-1-1</datapackagename>
+    <fedataprefix></fedataprefix>
+    <feextcfgdataprefix></feextcfgdataprefix>
+    <fedatapackaging>clc</fedatapackaging>
+    <fevoice>Ichiro</fevoice>
+    <frequencyhz>22050</frequencyhz>
+    <voicemodel>bet3</voicemodel>
+    <voiceoperatingpoint>embedded-compact</voiceoperatingpoint>
+    <reduction>bet3</reduction>
+    <coder>bet3</coder>
+    <bitrate></bitrate>
+    <overheadframes></overheadframes>
+    <audiooutputmimetype>audio/L16;rate=22050</audiooutputmimetype>
+    <audiooutputsamplebits>16</audiooutputsamplebits>
+    <nlucompatvc6be>yes</nlucompatvc6be>
+    <compatstrongbnd>no</compatstrongbnd>
+  </PARAMETERS>
+  <OBJECTS>
+    <AUDIOFETCHER>audiofetch</AUDIOFETCHER>
+    <RBYAPDB>rby/apdb</RBYAPDB>
+    <RBYLINGEG>rby/lingeg</RBYLINGEG>
+    <DCTEG>dcteg</DCTEG>
+    <FE_DCTLKP>fe/fe_dctlkp</FE_DCTLKP>
+    <FE_DEPES>fe/fe_depes</FE_DEPES>
+    <INET>inetspi</INET>
+  </OBJECTS>
+  <COMPONENTS>
+    <COMPONENT>xcoder</COMPONENT>
+    <COMPONENT>ttt/tbm</COMPONENT>
+    <COMPONENT>ttt/re</COMPONENT>
+    <COMPONENT>rby/dummy</COMPONENT>
+    <COMPONENT>rby/pp</COMPONENT>
+    <COMPONENT>rby/morph</COMPONENT>
+    <COMPONENT>rby/puncht</COMPONENT>
+    <COMPONENT>fe/fe_udwl</COMPONENT>
+    <COMPONENT>rby/unpuncht</COMPONENT>
+    <COMPONENT>fe/fe_clcml</COMPONENT>
+    <COMPONENT>rby/normout</COMPONENT>
+    <COMPONENT>rby/ling</COMPONENT>
+    <COMPONENT>rby/synth</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
+    <COMPONENT>audioinserter</COMPONENT>
+    <COMPONENT>xcoder/mrksync</COMPONENT>
+  </COMPONENTS>
+  <RESOURCES>
+    <!-- The next entries specify default broker strings for the user dictionary resources, once language specific and once voice specific -->
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      userdct/jpj
+    </RESOURCE>
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      userdct/jpj/ichiro
+    </RESOURCE>
+
+    <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </RESOURCES>
+</HEADER>
+</NUANCE>

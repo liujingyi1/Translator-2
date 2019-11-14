@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:paddingEnd="36dp"
+        android:paddingStart="36dp"
+        android:text="title"
+        android:textColor="@color/settings_primary_color"
+        android:textSize="32sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/settings_divider_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="18dp"
+        android:paddingEnd="36dp"
+        android:paddingStart="36dp"
+        android:paddingTop="18dp" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/settings_divider_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="33dp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="33dp">
+
+        <TextView
+            android:id="@+id/button3"
+            style="@style/DialogButtonStyle"
+            android:text="button3" />
+
+        <View
+            android:id="@+id/button_divider_2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/button2"
+            style="@style/DialogButtonStyle"
+            android:text="button2" />
+
+        <View
+            android:id="@+id/button_divider_1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/button1"
+            style="@style/DialogButtonStyle"
+            android:text="button1" />
+    </LinearLayout>
+
+</LinearLayout>

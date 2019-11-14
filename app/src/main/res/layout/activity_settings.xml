@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_status_bar_color"
+        android:gravity="center_vertical"
+        android:paddingStart="0dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="92dp"
+            android:layout_height="56dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingEnd="18dp"
+            android:paddingStart="18dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_title"
+            android:textColor="#DE000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFCACCD1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/setting_navigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/wifi_setting_button"
+                style="@style/SettingButtonStyle" />
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/pair_setting_button"
+                style="@style/SettingButtonStyle" />
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/role_setting_button"
+                style="@style/SettingButtonStyle" />
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/common_setting_button"
+                style="@style/SettingButtonStyle" />
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/storage_setting_button"
+                style="@style/SettingButtonStyle" />
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/ota_setting_button"
+                style="@style/SettingButtonStyle" />
+
+            <com.letrans.android.translator.settings.SettingButton
+                android:id="@+id/about_setting_button"
+                style="@style/SettingButtonStyle"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_panel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:padding="18dp">
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

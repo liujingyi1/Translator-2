@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.lyy.android.lyymsgbyte";
+option java_outer_classname ="LyyMsgByteProto";
+
+package lyymsgbyte;
+
+service Greeter{
+  //Sends a greeting
+  rpc SayLyyMsgByte(LyyMsgByteRequest) returns (LyyMsgByteReply){}
+}
+
+message LyyMsgByteRequest{
+  bytes querykey = 1;
+}
+
+message LyyMsgByteReply{
+  bytes replymessage = 1;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_length">40dp</dimen>
+    <dimen name="msg_text_size">18sp</dimen>
+
+    <!-- Height of the floating action button -->
+    <dimen name="floating_action_button_height">56dp</dimen>
+    <!-- Width of the floating action button -->
+    <dimen name="floating_action_button_width">56dp</dimen>
+    <!-- Right margin of the floating action button -->
+    <dimen name="floating_action_button_margin_right">16dp</dimen>
+    <!-- Bottom margin of the floating action button -->
+    <dimen name="floating_action_button_margin_bottom">16dp</dimen>
+
+    <dimen name="main_language_item_img_length">92dp</dimen>
+    <dimen name="main_language_item_text_size">13sp</dimen>
+    <dimen name="compose_msg_sidebar_img_size">48dp</dimen>
+    <dimen name="compose_ui_msg_container_width">220dp</dimen>
+</resources>

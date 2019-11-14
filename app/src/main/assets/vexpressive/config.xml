@@ -1,0 +1,46 @@
+<speakers>
+<speaker language="ara-XWW" languageName="Arabic" name="Laila" />
+<speaker language="ind-IDN" languageName="Bahasa (Indonesia)" name="Damayanti" />
+<speaker language="baq-ESP" languageName="Basque" name="Miren" />
+<speaker language="yue-CHN" languageName="Cantonese" name="Sin-Ji" />
+<speaker language="cat-ESP" languageName="Catalan" name="Jordi" />
+<speaker language="ces-CZE" languageName="Czech" name="Iveta" />
+<speaker language="dan-DNK" languageName="Danish" name="Magnus" />
+<speaker language="nld-NLD" languageName="Dutch" name="Claire" />
+<speaker language="nld-BEL" languageName="Dutch (Belgium)" name="Ellen" />
+<speaker language="eng-AUS" languageName="English (Australia)" name="Karen" />
+<speaker language="eng-GBR" languageName="English (GB)" name="Daniel" />
+<speaker language="eng-IRL" languageName="English (Ireland)" name="Moira" />
+<speaker language="eng-SCT" languageName="English (Scotland)" name="Fiona" />
+<speaker language="eng-ZAF" languageName="English (South Africa)" name="Tessa" />
+<speaker language="eng-IND" languageName="English (India)" name="Veena" />
+<speaker language="eng-USA" languageName="English (US)" name="Allison" />
+<speaker language="fin-FIN" languageName="Finnish" name="Satu" />
+<speaker language="fra-FRA" languageName="French" name="Aurelie" />
+<speaker language="fra-CAN" languageName="French (Canada)" name="Amelie" />
+<speaker language="deu-DEU" languageName="German" name="Markus" />
+<speaker language="ell-GRC" languageName="Greek" name="Melina" />
+<speaker language="glg-ESP" languageName="Galician" name="Carmela" />
+<speaker language="heb-ISR" languageName="Hebrew" name="Carmit" />
+<speaker language="hin-IND" languageName="Hindi" name="Lekha" />
+<speaker language="hun-HUN" languageName="Hungarian" name="Mariska" />
+<speaker language="ita-ITA" languageName="Italian" name="Alice" />
+<speaker language="jpn-JPN" languageName="Japanese" name="Ichiro" />
+<speaker language="kor-KOR" languageName="Korean" name="Sora" />
+<speaker language="cmn-CHN" languageName="Mandarin (China)" name="Li-Li" />
+<speaker language="cmn-TWN" languageName="Mandarin (Taiwan)" name="Mei-Jia" />
+<speaker language="nor-NOR" languageName="Norwegian" name="Nora" />
+<speaker language="pol-POL" languageName="Polish" name="Zosia" />
+<speaker language="por-BRA" languageName="Portuguese (Brazil)" name="Luciana" />
+<speaker language="por-PRT" languageName="Portuguese (Portugal)" name="Joana" />
+<speaker language="ron-ROU" languageName="Romanian" name="Ioana" />
+<speaker language="rus-RUS" languageName="Russian" name="Katya" />
+<speaker language="slk-SVK" languageName="Slovak" name="Laura" />
+<speaker language="spa-COL" languageName="Spanish (Columbia)" name="Soledad" />
+<speaker language="spa-ESP" languageName="Spanish (Castilian)" name="Jorge" />
+<speaker language="swe-SWE" languageName="Swedish" name="Alva" />
+<speaker language="tha-THA" languageName="Thai" name="Kanya" />
+<speaker language="tur-TUR" languageName="Turkish" name="Cem" />
+<speaker language="spa-ESP" languageName="Valencian" name="Empar" />
+<speaker language="zlm-MYS" languageName="Malay" name="Amira" />
+</speakers>

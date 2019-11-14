@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:text="@string/feedback_contacts" />
+
+    <EditText
+        android:id="@+id/feedback_phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@android:color/white"
+        android:hint="@string/feedback_phone_hint"
+        android:imeOptions="actionNone"
+        android:inputType="phone"
+        android:paddingStart="58dp"
+        android:textColor="@color/settings_primary_color"
+        android:textSize="@dimen/settings_primary_size" />
+
+</LinearLayout>

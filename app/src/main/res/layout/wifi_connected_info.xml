@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wifi_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingStart="58dp" />
+
+        <TextView
+            android:id="@+id/button_forget"
+            style="@style/GeneralButtonStyle"
+            android:layout_marginTop="18dp"
+            android:text="@string/wifi_info_forget" />
+
+        <TextView
+            android:id="@+id/button_wifi_sign"
+            style="@style/GeneralButtonStyle"
+            android:layout_marginTop="18dp"
+            android:text="@string/wifi_info_sign"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

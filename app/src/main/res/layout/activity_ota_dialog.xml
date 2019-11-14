@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="688dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:paddingEnd="36dp"
+        android:paddingStart="36dp"
+        android:textAllCaps="false"
+        android:text="@string/ota_update"
+        android:textColor="@color/settings_primary_color"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:text="@string/ota_discover_new_version"
+        android:textColor="@color/settings_secondary_color"
+        android:textSize="@dimen/settings_primary_size"/>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:paddingBottom="33dp"
+        android:paddingTop="33dp">
+
+        <TextView
+            android:id="@+id/ota_cancel"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/settings_primary_color"
+            android:textSize="@dimen/settings_primary_size"
+            android:text="@android:string/cancel"
+            android:background="@drawable/dialog_left_button_background_material"/>
+
+        <View
+            android:id="@+id/button_divider_1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797" />
+
+        <TextView
+            android:id="@+id/ota_ok"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/settings_primary_color"
+            android:textSize="@dimen/settings_primary_size"
+            android:text="@string/ota_goto"
+            android:background="@drawable/dialog_right_button_background_material"/>
+    </LinearLayout>
+
+</LinearLayout>

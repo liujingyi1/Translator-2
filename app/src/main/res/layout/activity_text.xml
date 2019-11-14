@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tts_tv"
+        android:text="@string/tts_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tts_tv1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tts_tv" >
+        <Button
+            android:id="@+id/zh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zh-CN" />
+        <Button
+            android:id="@+id/en_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="en-US" />
+        <Button
+            android:id="@+id/fr_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fr-FR" />
+        <Button
+            android:id="@+id/ru_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ru-Ru" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tts_tv2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tts_tv1" >
+        <Button
+            android:id="@+id/es_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="es-ES" />
+        <Button
+            android:id="@+id/hi_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hi-HI" />
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_button_name" />
+        <Button
+            android:id="@+id/vi_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vi-VN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tts_tv3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tts_tv2" >
+        <Button
+            android:id="@+id/cn_sc_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四川" />
+        <Button
+            android:id="@+id/cn_db_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="东北" />
+        <Button
+            android:id="@+id/cn_hen_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河南" />
+        <Button
+            android:id="@+id/cn_hun_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湖南" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tts_tv4"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tts_tv3" >
+        <Button
+            android:id="@+id/cn_sx_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陕西" />
+        <Button
+            android:id="@+id/cn_tw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="台湾" />
+        <Button
+            android:id="@+id/cn_hk_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="香港" />
+        <Button
+            android:id="@+id/cn_pt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通话" />
+    </LinearLayout>
+</RelativeLayout>

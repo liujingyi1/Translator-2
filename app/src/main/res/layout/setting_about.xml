@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/setting_device_info"/>
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/feedback_title"/>
+            <TextView
+                android:id="@+id/feedback_btn"
+                style="@style/DetailsButtonStyle"
+                android:text="@string/feedback_title"/>
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/user_protocol_title"/>
+            <TextView
+                android:id="@+id/user_protocol_btn"
+                style="@style/DetailsButtonStyle"
+                android:text="@string/user_protocol_title"/>
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/reset_factory_label"/>
+            <TextView
+                android:id="@+id/refactory_button"
+                style="@style/GeneralButtonStyle"
+                android:text="@string/reset_factory_label"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/new_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background_color"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:text="@string/title_screen_timeout" />
+
+    <RadioGroup
+        android:id="@+id/screen_time_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingStart="18dp">
+
+        <RadioButton
+            android:id="@+id/screen_time_2_mins_btn"
+            style="@style/RadioButtonStyle"
+            android:text="@string/screen_time_2_mins" />
+
+        <View style="@style/HorizontalLineStyle" />
+
+        <RadioButton
+            android:id="@+id/screen_time_5_mins_btn"
+            style="@style/RadioButtonStyle"
+            android:text="@string/screen_time_5_mins" />
+
+        <View style="@style/HorizontalLineStyle" />
+
+        <RadioButton
+            android:id="@+id/screen_time_10_mins_btn"
+            style="@style/RadioButtonStyle"
+            android:text="@string/screen_time_10_mins" />
+
+        <View style="@style/HorizontalLineStyle" />
+
+        <RadioButton
+            android:id="@+id/screen_time_30_mins_btn"
+            style="@style/RadioButtonStyle"
+            android:text="@string/screen_time_30_mins" />
+    </RadioGroup>
+
+</LinearLayout>

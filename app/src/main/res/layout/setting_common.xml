@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/title_display_and_brightness" />
+
+            <include layout="@layout/setting_brightness" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/title_screen_timeout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="18dp"
+                    android:paddingStart="58dp"
+                    android:paddingTop="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_screen_timeout_battery"
+                        android:textColor="#FF818181"
+                        android:textSize="24sp" />
+
+                    <com.letrans.android.translator.settings.common.ScreenTimeoutSeekBar
+                        android:id="@+id/seek_bar_screen_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:entries="@array/entry_values_screen_timeout"
+                        app:max="4"
+                        app:progress="0"
+                        app:thumb="@drawable/brightness_shape_circle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="18dp"
+                    android:paddingEnd="18dp"
+                    android:paddingStart="58dp"
+                    android:paddingTop="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_screen_timeout_charging"
+                        android:textColor="#FF818181"
+                        android:textSize="24sp" />
+
+                    <com.letrans.android.translator.settings.common.ScreenTimeoutSeekBar
+                        android:id="@+id/seek_bar_screen_timeout_charging"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:entries="@array/entry_values_screen_timeout"
+                        app:max="4"
+                        app:progress="0"
+                        app:thumb="@drawable/brightness_shape_circle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/title_languages" />
+
+            <TextView
+                android:id="@+id/id_languages"
+                style="@style/DetailsButtonStyle"
+                android:text="@string/title_languages" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/title_font_size" />
+
+            <TextView
+                android:id="@+id/id_font_size"
+                style="@style/DetailsButtonStyle"
+                android:text="@string/title_font_size" />
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/title_battery_percentage" />
+
+            <LinearLayout
+                android:id="@+id/sw_battery_percentage_container"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/item_background_material"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="18dp"
+                android:paddingStart="58dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/title_battery_percentage"
+                    android:textColor="@color/settings_primary_color"
+                    android:textSize="@dimen/settings_primary_size" />
+
+                <Switch
+                    android:id="@+id/sw_battery_percentage"
+                    android:layout_width="66dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="18dp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/title_date_time" />
+
+            <TextView
+                android:id="@+id/id_date_time"
+                style="@style/DetailsButtonStyle"
+                android:text="@string/title_date_time" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/common_new_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

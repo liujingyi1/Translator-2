@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_wifi_switch"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/item_background_material"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="18dp"
+            android:paddingStart="58dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wifi_switch"
+                android:textColor="@color/settings_primary_color"
+                android:textSize="@dimen/settings_primary_size" />
+
+            <Switch
+                android:id="@+id/switch_status"
+                android:layout_width="66dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="18dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/wifi_connected_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/wifi_list_item" />
+
+            <View style="@style/HorizontalLineStyle" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/id_wifi_select"
+            style="@style/CategoryStyle"
+            android:text="@string/wifi_select_hint" />
+
+        <TextView
+            android:id="@+id/tv_wifi_state"
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.letrans.android.translator.settings.wifi.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" />
+            </com.letrans.android.translator.settings.wifi.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:id="@+id/wifi_progressBar"
+                style="@style/TrimmedHorizontalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/wifi_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wifi_disable_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi_disable_label"
+                    android:textColor="@color/settings_secondary_color"
+                    android:textSize="@dimen/settings_secondary_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/wifi_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

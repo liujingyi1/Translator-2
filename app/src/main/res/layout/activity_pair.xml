@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/no_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="32sp"
+        android:text="@string/no_network"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/pairing_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/pair_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pair_text_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/pair_text_color"/>
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="42sp"
+                android:textColor="@color/pair_code_text_color"
+                />
+
+            <Button
+                android:id="@+id/code_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/pair_text_color"
+                android:background="@drawable/time_text_background"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="26dp"
+            android:gravity="center">
+            <com.letrans.android.translator.settings.pair.DigitsEditText
+                android:id="@+id/pair_id"
+                android:layout_width="@dimen/round_button_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pair_text_size"
+                android:hint="@string/code_edit_hint"
+                android:paddingTop="@dimen/edit_text_padding"
+                android:paddingBottom="@dimen/edit_text_padding"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:background="@drawable/edittext_background"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pair_btn"
+            android:layout_width="@dimen/round_button_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pair_text_size"
+            android:gravity="center"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/round_btn_background"
+            android:text="@string/pair_text"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/paired_group"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+            <TextView
+                android:id="@+id/my_device_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:drawableTop="@drawable/device_icon"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/device_connect"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/pair_device_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:drawableTop="@drawable/device_icon"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/unpair_btn"
+            android:layout_width="@dimen/round_button_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pair_text_size"
+            android:gravity="center"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_btn_background"
+            android:text="@string/unpair_text"/>
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/keyboard_line_width"
+        android:background="@color/keyboard_background"
+        android:focusable="true"
+        android:keyTextSize="35sp"
+        android:labelTextSize="20sp"
+        android:keyTextColor="#DD121212"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="0.0"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/keyboard_key_bg"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

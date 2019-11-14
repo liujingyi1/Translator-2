@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fields"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_password"
+        android:textColor="@color/settings_secondary_color"
+        android:textSize="@dimen/settings_secondary_size" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/white"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/settings_primary_color"
+        android:textSize="@dimen/settings_primary_size" />
+
+    <CheckBox
+        android:id="@+id/show_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/wifi_show_password"
+        android:textColor="@color/settings_primary_color"
+        android:textSize="28sp" />
+</LinearLayout>

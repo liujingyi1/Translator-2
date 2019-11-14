@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.letrans.android.translator">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- Optional. Required for wifi feature -->
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".TranslatorApp"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:configChanges="screenSize|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="7cd84a49b97838c932ebb7109f3c3eb4" />
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="11429006" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="9Y6ztHXzePlBVBleGazQcNlD" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="eUQ8xmzIIq8KApdxHax1aNUC7IVQ432F" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoTitle">
+            <intent-filter android:priority="2">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="@string/home_label"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".composemessage.ComposeMessageActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/compose_message"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".permission.RequestPermissionsActivity" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/SettingTheme">
+            <intent-filter>
+                <action android:name="com.translator.setting.network" />
+                <action android:name="com.translator.setting.pair" />
+                <action android:name="com.translator.setting.role" />
+                <action android:name="com.translator.setting.common" />
+                <action android:name="com.translator.setting.storage" />
+                <action android:name="com.translator.setting.ota" />
+                <action android:name="com.translator.setting.about" />
+                <action android:name="com.translator.setting.mainscreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".mpush.sdk.MPushReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="com.mpush.HEALTH_CHECK" />
+                <action android:name="com.mpush.NOTIFY_CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".mpush.sdk.MPushService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".mpush.sdk.MPushFakeService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.letrans.android.translator.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+
+        <receiver
+            android:name=".settings.ota.receiver.AppInstalledReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+        <service android:name=".mpush.TMPushService" />
+        <service android:name=".settings.wifi.WifiCheckPortalService" />
+
+        <activity
+            android:name=".ui.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".settings.ota.dialog.OtaDialogActivity"
+            android:theme="@style/OtaDialogStyle" />
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/google">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".settings.wifi.WifiCheckPortalReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".settings.wifi.WifiLoginDialog"
+            android:launchMode="singleTop"
+            android:theme="@style/WifiCheckPortalDialogStyle" />
+    </application>
+
+</manifest>
